@@ -25,10 +25,19 @@ import google.generativeai as genai
 import re 
 import hashlib
 import json
+from PIL import Image
 
 # STREAMLIT CSS AND CONFIGURATIONS ==============================================================================================================
 
-st.set_page_config(page_title="InsightFox EDA", layout="wide")
+logo = Image.open("C:/Users/keno/OneDrive/Documents/Projects/DATA AUTOMIZER APP/insightfox_logo.jpeg")
+
+st.set_page_config(
+    page_title="InsightFox",
+    page_icon=logo,
+    layout="wide",  # or "wide" if you prefer
+    initial_sidebar_state="auto"
+)
+
 st.set_option('client.showErrorDetails', False)
 
 matplotlib.use('Agg')
