@@ -29,7 +29,7 @@ from PIL import Image
 
 # STREAMLIT CSS AND CONFIGURATIONS ==============================================================================================================
 
-logo = Image.open("C:/Users/keno/OneDrive/Documents/Projects/DATA AUTOMIZER APP/insightfox_logo.jpeg")
+logo = Image.open("insightfox_logo.jpeg")
 
 st.set_page_config(
     page_title="InsightFox",
